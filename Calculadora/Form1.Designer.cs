@@ -157,7 +157,7 @@
             this.Bt_decimal.Name = "Bt_decimal";
             this.Bt_decimal.Size = new System.Drawing.Size(45, 45);
             this.Bt_decimal.TabIndex = 14;
-            this.Bt_decimal.Text = ".";
+            this.Bt_decimal.Text = ",";
             this.Bt_decimal.UseVisualStyleBackColor = true;
             this.Bt_decimal.Click += new System.EventHandler(this.Bt_decimal_Click);
             // 
@@ -214,6 +214,7 @@
             this.Bt_atras.TabIndex = 18;
             this.Bt_atras.Text = "←";
             this.Bt_atras.UseVisualStyleBackColor = true;
+            this.Bt_atras.Click += new System.EventHandler(this.Bt_atras_Click);
             // 
             // Bt_igual
             // 

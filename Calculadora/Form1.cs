@@ -19,11 +19,11 @@ namespace Calculadora
 
         Operaciones_Matematicas obj = new Operaciones_Matematicas();
         private String opreador = null;
-        private Double n1,n2 = 0.0;
+        private Double n1, n2 = 0.0;
 
         private void Bt_cero_Click(object sender, EventArgs e)
         {
-            Tx_pantalla.Text += Bt_cero.Text;  
+            Tx_pantalla.Text += Bt_cero.Text;
         }
 
         private void Bt_uno_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace Calculadora
             Tx_pantalla.Text += Bt_dos.Text;
         }
 
-            private void Bt_tres_Click(object sender, EventArgs e)
+        private void Bt_tres_Click(object sender, EventArgs e)
         {
             Tx_pantalla.Text += Bt_tres.Text;
         }
@@ -78,7 +78,12 @@ namespace Calculadora
 
         private void Bt_factorial_Click(object sender, EventArgs e)
         {
-            Tx_pantalla.Text= obj.factorial(Double.Parse(Tx_pantalla.Text)).ToString();
+            if (string.IsNullOrEmpty(Tx_pantalla.Text))
+            {
+                Tx_pantalla.Text = "Digite un valor";
+            }
+            else {Tx_pantalla.Text = obj.factorial(Double.Parse(Tx_pantalla.Text)).ToString(); }
+            
         }
 
         private void Bt_Limpiar_Click(object sender, EventArgs e)
@@ -86,62 +91,125 @@ namespace Calculadora
             Tx_pantalla.Clear();
         }
 
-      
+
 
         private void Bt_suma_Click(object sender, EventArgs e)
         {
-            opreador = Bt_suma.Text;
-            n1 = Double.Parse(Tx_pantalla.Text);
-            Tx_pantalla.Clear();
+            if (string.IsNullOrEmpty(Tx_pantalla.Text))
+            {
+                Tx_pantalla.Text = "Digite un valor";
+            }
+            else
+            {
+                opreador = Bt_suma.Text;
+                n1 = Double.Parse(Tx_pantalla.Text);
+                Tx_pantalla.Clear();
+            }
+
         }
 
         private void Bt_resta_Click(object sender, EventArgs e)
         {
-            opreador = Bt_resta.Text;
-            n1 = Double.Parse(Tx_pantalla.Text);
-            Tx_pantalla.Clear();
+            if (string.IsNullOrEmpty(Tx_pantalla.Text))
+            {
+                Tx_pantalla.Text = "Digite un valor";
+            }
+            else
+            {
+                opreador = Bt_resta.Text;
+                n1 = Double.Parse(Tx_pantalla.Text);
+                Tx_pantalla.Clear();
+            }
+
         }
 
         private void Bt_multiplica_Click(object sender, EventArgs e)
         {
-            opreador = Bt_multiplica.Text;
-            n1 = Double.Parse(Tx_pantalla.Text);
-            Tx_pantalla.Clear();
+            if (string.IsNullOrEmpty(Tx_pantalla.Text))
+            {
+                Tx_pantalla.Text = "Digite un valor";
+            }
+            else
+            {
+                opreador = Bt_multiplica.Text;
+                n1 = Double.Parse(Tx_pantalla.Text);
+                Tx_pantalla.Clear();
+            }
+
         }
 
         private void Bt_div_Click(object sender, EventArgs e)
         {
-            opreador = Bt_div.Text;
-            n1 = Double.Parse(Tx_pantalla.Text);
-            Tx_pantalla.Clear();
+            if (string.IsNullOrEmpty(Tx_pantalla.Text))
+            {
+                Tx_pantalla.Text = "Digite un valor";
+            }
+            else
+            {
+                opreador = Bt_div.Text;
+                n1 = Double.Parse(Tx_pantalla.Text);
+                Tx_pantalla.Clear();
+            }
+
+
+
         }
 
         private void Bt_porcentaje_Click(object sender, EventArgs e)
         {
-            opreador = Bt_porcentaje.Text;
-            Tx_pantalla.Text = (Double.Parse(Tx_pantalla.Text)/100).ToString();
-           
+            if (string.IsNullOrEmpty(Tx_pantalla.Text))
+            {
+                Tx_pantalla.Text = "Digite un valor";
+            }
+            else {     opreador = Bt_porcentaje.Text;
+            Tx_pantalla.Text = (Double.Parse(Tx_pantalla.Text) / 100).ToString(); }
+       
+
+        }
+
+        private void Bt_atras_Click(object sender, EventArgs e)
+        {
+            Tx_pantalla.Text = Tx_pantalla.Text.Remove(Tx_pantalla.Text.Length - 1);
         }
 
         private void Bt_igual_Click(object sender, EventArgs e)
         {
-            n2 = Double.Parse(Tx_pantalla.Text);
-            switch (opreador) {
-                case "+":
-                    Tx_pantalla.Text = obj.suma(n1, n2).ToString();
-                    break;
-                case "-":
-                    Tx_pantalla.Text = obj.resta(n1, n2).ToString();
-                    break;
-                case "*":
-                    Tx_pantalla.Text = obj.Multiplicacion(n1, n2).ToString();
-                    break;
-                case "/":
-                    Tx_pantalla.Text = obj.divicion(n1, n2).ToString();
-                    break;
-                case "%":
-                    Tx_pantalla.Text = obj.Multiplicacion(n1, n2).ToString();
-                    break;
+            if (string.IsNullOrEmpty(Tx_pantalla.Text))
+            {
+                Tx_pantalla.Text = "Digite un valor";
+            }
+            else
+            {
+                n2 = Double.Parse(Tx_pantalla.Text);
+                switch (opreador)
+                {
+                    case "+":
+                        Tx_pantalla.Text = obj.suma(n1, n2).ToString();
+                        break;
+                    case "-":
+                        Tx_pantalla.Text = obj.resta(n1, n2).ToString();
+                        break;
+                    case "*":
+                        Tx_pantalla.Text = obj.Multiplicacion(n1, n2).ToString();
+                        break;
+                    case "/":
+
+
+
+                        if (n2 == 0)
+                        {
+                            Tx_pantalla.Text = "No se puede dividir entre cero";
+                        }
+                        else
+                        {
+                            Tx_pantalla.Text = obj.divicion(n1, n2).ToString();
+                        }
+                        break;
+                    case "%":
+                        Tx_pantalla.Text = obj.Multiplicacion(n1, n2).ToString();
+                        break;
+                }
+
 
             }
         }
