@@ -28,240 +28,250 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Bt_suma = new System.Windows.Forms.Button();
+            this.Bt_siete = new System.Windows.Forms.Button();
+            this.Bt_cuatro = new System.Windows.Forms.Button();
+            this.Bt_uno = new System.Windows.Forms.Button();
+            this.Bt_cero = new System.Windows.Forms.Button();
+            this.Bt_cinco = new System.Windows.Forms.Button();
+            this.Bt_dos = new System.Windows.Forms.Button();
+            this.Bt_ocho = new System.Windows.Forms.Button();
+            this.Bt_resta = new System.Windows.Forms.Button();
+            this.Bt_decimal = new System.Windows.Forms.Button();
+            this.Bt_seis = new System.Windows.Forms.Button();
+            this.Bt_tres = new System.Windows.Forms.Button();
+            this.Bt_nueve = new System.Windows.Forms.Button();
+            this.Bt_multiplica = new System.Windows.Forms.Button();
+            this.Bt_atras = new System.Windows.Forms.Button();
+            this.Bt_igual = new System.Windows.Forms.Button();
+            this.Bt_limpiar = new System.Windows.Forms.Button();
+            this.Bt_div = new System.Windows.Forms.Button();
+            this.Tx_pantalla = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // Bt_suma
             // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(39, 98);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Bt_suma.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_suma.Location = new System.Drawing.Point(39, 98);
+            this.Bt_suma.Name = "Bt_suma";
+            this.Bt_suma.Size = new System.Drawing.Size(45, 45);
+            this.Bt_suma.TabIndex = 0;
+            this.Bt_suma.Text = "+";
+            this.Bt_suma.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Bt_siete
             // 
-            this.button2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(39, 149);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 45);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "7";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Bt_siete.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_siete.Location = new System.Drawing.Point(39, 149);
+            this.Bt_siete.Name = "Bt_siete";
+            this.Bt_siete.Size = new System.Drawing.Size(45, 45);
+            this.Bt_siete.TabIndex = 1;
+            this.Bt_siete.Text = "7";
+            this.Bt_siete.UseVisualStyleBackColor = true;
+            this.Bt_siete.Click += new System.EventHandler(this.Bt_siete_Click);
             // 
-            // button3
+            // Bt_cuatro
             // 
-            this.button3.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(39, 200);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(45, 45);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "4";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Bt_cuatro.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_cuatro.Location = new System.Drawing.Point(39, 200);
+            this.Bt_cuatro.Name = "Bt_cuatro";
+            this.Bt_cuatro.Size = new System.Drawing.Size(45, 45);
+            this.Bt_cuatro.TabIndex = 3;
+            this.Bt_cuatro.Text = "4";
+            this.Bt_cuatro.UseVisualStyleBackColor = true;
+            this.Bt_cuatro.Click += new System.EventHandler(this.Bt_cuatro_Click);
             // 
-            // button4
+            // Bt_uno
             // 
-            this.button4.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(39, 251);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(45, 45);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "1";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Bt_uno.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_uno.Location = new System.Drawing.Point(39, 251);
+            this.Bt_uno.Name = "Bt_uno";
+            this.Bt_uno.Size = new System.Drawing.Size(45, 45);
+            this.Bt_uno.TabIndex = 2;
+            this.Bt_uno.Text = "1";
+            this.Bt_uno.UseVisualStyleBackColor = true;
+            this.Bt_uno.Click += new System.EventHandler(this.Bt_uno_Click);
             // 
-            // button5
+            // Bt_cero
             // 
-            this.button5.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(39, 302);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(96, 45);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "0";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Bt_cero.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_cero.Location = new System.Drawing.Point(39, 302);
+            this.Bt_cero.Name = "Bt_cero";
+            this.Bt_cero.Size = new System.Drawing.Size(96, 45);
+            this.Bt_cero.TabIndex = 4;
+            this.Bt_cero.Text = "0";
+            this.Bt_cero.UseVisualStyleBackColor = true;
+            this.Bt_cero.Click += new System.EventHandler(this.Bt_cero_Click);
             // 
-            // button7
+            // Bt_cinco
             // 
-            this.button7.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(90, 200);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(45, 45);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "5";
-            this.button7.UseVisualStyleBackColor = true;
+            this.Bt_cinco.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_cinco.Location = new System.Drawing.Point(90, 200);
+            this.Bt_cinco.Name = "Bt_cinco";
+            this.Bt_cinco.Size = new System.Drawing.Size(45, 45);
+            this.Bt_cinco.TabIndex = 8;
+            this.Bt_cinco.Text = "5";
+            this.Bt_cinco.UseVisualStyleBackColor = true;
+            this.Bt_cinco.Click += new System.EventHandler(this.Bt_cinco_Click);
             // 
-            // button8
+            // Bt_dos
             // 
-            this.button8.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(90, 251);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(45, 45);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "2";
-            this.button8.UseVisualStyleBackColor = true;
+            this.Bt_dos.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_dos.Location = new System.Drawing.Point(90, 251);
+            this.Bt_dos.Name = "Bt_dos";
+            this.Bt_dos.Size = new System.Drawing.Size(45, 45);
+            this.Bt_dos.TabIndex = 7;
+            this.Bt_dos.Text = "2";
+            this.Bt_dos.UseVisualStyleBackColor = true;
+            this.Bt_dos.Click += new System.EventHandler(this.Bt_dos_Click);
             // 
-            // button9
+            // Bt_ocho
             // 
-            this.button9.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(90, 149);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(45, 45);
-            this.button9.TabIndex = 6;
-            this.button9.Text = "8";
-            this.button9.UseVisualStyleBackColor = true;
+            this.Bt_ocho.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_ocho.Location = new System.Drawing.Point(90, 149);
+            this.Bt_ocho.Name = "Bt_ocho";
+            this.Bt_ocho.Size = new System.Drawing.Size(45, 45);
+            this.Bt_ocho.TabIndex = 6;
+            this.Bt_ocho.Text = "8";
+            this.Bt_ocho.UseVisualStyleBackColor = true;
+            this.Bt_ocho.Click += new System.EventHandler(this.Bt_ocho_Click);
             // 
-            // button10
+            // Bt_resta
             // 
-            this.button10.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(90, 98);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(45, 45);
-            this.button10.TabIndex = 5;
-            this.button10.Text = "-";
-            this.button10.UseVisualStyleBackColor = true;
+            this.Bt_resta.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_resta.Location = new System.Drawing.Point(90, 98);
+            this.Bt_resta.Name = "Bt_resta";
+            this.Bt_resta.Size = new System.Drawing.Size(45, 45);
+            this.Bt_resta.TabIndex = 5;
+            this.Bt_resta.Text = "-";
+            this.Bt_resta.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // Bt_decimal
             // 
-            this.button11.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(141, 302);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(45, 45);
-            this.button11.TabIndex = 14;
-            this.button11.Text = ".";
-            this.button11.UseVisualStyleBackColor = true;
+            this.Bt_decimal.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_decimal.Location = new System.Drawing.Point(141, 302);
+            this.Bt_decimal.Name = "Bt_decimal";
+            this.Bt_decimal.Size = new System.Drawing.Size(45, 45);
+            this.Bt_decimal.TabIndex = 14;
+            this.Bt_decimal.Text = ".";
+            this.Bt_decimal.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // Bt_seis
             // 
-            this.button12.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(141, 200);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(45, 45);
-            this.button12.TabIndex = 13;
-            this.button12.Text = "6";
-            this.button12.UseVisualStyleBackColor = true;
+            this.Bt_seis.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_seis.Location = new System.Drawing.Point(141, 200);
+            this.Bt_seis.Name = "Bt_seis";
+            this.Bt_seis.Size = new System.Drawing.Size(45, 45);
+            this.Bt_seis.TabIndex = 13;
+            this.Bt_seis.Text = "6";
+            this.Bt_seis.UseVisualStyleBackColor = true;
+            this.Bt_seis.Click += new System.EventHandler(this.Bt_seis_Click);
             // 
-            // button13
+            // Bt_tres
             // 
-            this.button13.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(141, 251);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(45, 45);
-            this.button13.TabIndex = 12;
-            this.button13.Text = "3";
-            this.button13.UseVisualStyleBackColor = true;
+            this.Bt_tres.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_tres.Location = new System.Drawing.Point(141, 251);
+            this.Bt_tres.Name = "Bt_tres";
+            this.Bt_tres.Size = new System.Drawing.Size(45, 45);
+            this.Bt_tres.TabIndex = 12;
+            this.Bt_tres.Text = "3";
+            this.Bt_tres.UseVisualStyleBackColor = true;
+            this.Bt_tres.Click += new System.EventHandler(this.Bt_tres_Click);
             // 
-            // button14
+            // Bt_nueve
             // 
-            this.button14.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(141, 149);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(45, 45);
-            this.button14.TabIndex = 11;
-            this.button14.Text = "9";
-            this.button14.UseVisualStyleBackColor = true;
+            this.Bt_nueve.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_nueve.Location = new System.Drawing.Point(141, 149);
+            this.Bt_nueve.Name = "Bt_nueve";
+            this.Bt_nueve.Size = new System.Drawing.Size(45, 45);
+            this.Bt_nueve.TabIndex = 11;
+            this.Bt_nueve.Text = "9";
+            this.Bt_nueve.UseVisualStyleBackColor = true;
+            this.Bt_nueve.Click += new System.EventHandler(this.Bt_nueve_Click);
             // 
-            // button15
+            // Bt_multiplica
             // 
-            this.button15.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(141, 98);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(45, 45);
-            this.button15.TabIndex = 10;
-            this.button15.Text = "*";
-            this.button15.UseVisualStyleBackColor = true;
+            this.Bt_multiplica.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_multiplica.Location = new System.Drawing.Point(141, 98);
+            this.Bt_multiplica.Name = "Bt_multiplica";
+            this.Bt_multiplica.Size = new System.Drawing.Size(45, 45);
+            this.Bt_multiplica.TabIndex = 10;
+            this.Bt_multiplica.Text = "*";
+            this.Bt_multiplica.UseVisualStyleBackColor = true;
             // 
-            // button17
+            // Bt_atras
             // 
-            this.button17.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(192, 200);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(45, 45);
-            this.button17.TabIndex = 18;
-            this.button17.Text = "←";
-            this.button17.UseVisualStyleBackColor = true;
+            this.Bt_atras.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_atras.Location = new System.Drawing.Point(192, 200);
+            this.Bt_atras.Name = "Bt_atras";
+            this.Bt_atras.Size = new System.Drawing.Size(45, 45);
+            this.Bt_atras.TabIndex = 18;
+            this.Bt_atras.Text = "←";
+            this.Bt_atras.UseVisualStyleBackColor = true;
             // 
-            // button18
+            // Bt_igual
             // 
-            this.button18.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Location = new System.Drawing.Point(192, 251);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(45, 96);
-            this.button18.TabIndex = 17;
-            this.button18.Text = "=";
-            this.button18.UseVisualStyleBackColor = true;
+            this.Bt_igual.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_igual.Location = new System.Drawing.Point(192, 251);
+            this.Bt_igual.Name = "Bt_igual";
+            this.Bt_igual.Size = new System.Drawing.Size(45, 96);
+            this.Bt_igual.TabIndex = 17;
+            this.Bt_igual.Text = "=";
+            this.Bt_igual.UseVisualStyleBackColor = true;
             // 
-            // button19
+            // Bt_limpiar
             // 
-            this.button19.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(192, 149);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(45, 45);
-            this.button19.TabIndex = 16;
-            this.button19.Text = "CE";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
+            this.Bt_limpiar.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_limpiar.Location = new System.Drawing.Point(192, 149);
+            this.Bt_limpiar.Name = "Bt_limpiar";
+            this.Bt_limpiar.Size = new System.Drawing.Size(45, 45);
+            this.Bt_limpiar.TabIndex = 16;
+            this.Bt_limpiar.Text = "CE";
+            this.Bt_limpiar.UseVisualStyleBackColor = true;
+            this.Bt_limpiar.Click += new System.EventHandler(this.button19_Click);
             // 
-            // button20
+            // Bt_div
             // 
-            this.button20.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(192, 98);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(45, 45);
-            this.button20.TabIndex = 15;
-            this.button20.Text = "/";
-            this.button20.UseVisualStyleBackColor = true;
+            this.Bt_div.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_div.Location = new System.Drawing.Point(192, 98);
+            this.Bt_div.Name = "Bt_div";
+            this.Bt_div.Size = new System.Drawing.Size(45, 45);
+            this.Bt_div.TabIndex = 15;
+            this.Bt_div.Text = "/";
+            this.Bt_div.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // Tx_pantalla
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(39, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 44);
-            this.textBox1.TabIndex = 19;
+            this.Tx_pantalla.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tx_pantalla.Location = new System.Drawing.Point(39, 35);
+            this.Tx_pantalla.Name = "Tx_pantalla";
+            this.Tx_pantalla.Size = new System.Drawing.Size(198, 44);
+            this.Tx_pantalla.TabIndex = 19;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 365);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.button19);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Tx_pantalla);
+            this.Controls.Add(this.Bt_atras);
+            this.Controls.Add(this.Bt_igual);
+            this.Controls.Add(this.Bt_limpiar);
+            this.Controls.Add(this.Bt_div);
+            this.Controls.Add(this.Bt_decimal);
+            this.Controls.Add(this.Bt_seis);
+            this.Controls.Add(this.Bt_tres);
+            this.Controls.Add(this.Bt_nueve);
+            this.Controls.Add(this.Bt_multiplica);
+            this.Controls.Add(this.Bt_cinco);
+            this.Controls.Add(this.Bt_dos);
+            this.Controls.Add(this.Bt_ocho);
+            this.Controls.Add(this.Bt_resta);
+            this.Controls.Add(this.Bt_cero);
+            this.Controls.Add(this.Bt_cuatro);
+            this.Controls.Add(this.Bt_uno);
+            this.Controls.Add(this.Bt_siete);
+            this.Controls.Add(this.Bt_suma);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -271,25 +281,25 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button Bt_suma;
+        private System.Windows.Forms.Button Bt_siete;
+        private System.Windows.Forms.Button Bt_cuatro;
+        private System.Windows.Forms.Button Bt_uno;
+        private System.Windows.Forms.Button Bt_cero;
+        private System.Windows.Forms.Button Bt_cinco;
+        private System.Windows.Forms.Button Bt_dos;
+        private System.Windows.Forms.Button Bt_ocho;
+        private System.Windows.Forms.Button Bt_resta;
+        private System.Windows.Forms.Button Bt_decimal;
+        private System.Windows.Forms.Button Bt_seis;
+        private System.Windows.Forms.Button Bt_tres;
+        private System.Windows.Forms.Button Bt_nueve;
+        private System.Windows.Forms.Button Bt_multiplica;
+        private System.Windows.Forms.Button Bt_atras;
+        private System.Windows.Forms.Button Bt_igual;
+        private System.Windows.Forms.Button Bt_limpiar;
+        private System.Windows.Forms.Button Bt_div;
+        private System.Windows.Forms.TextBox Tx_pantalla;
     }
 }
 
