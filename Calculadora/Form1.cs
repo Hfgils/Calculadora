@@ -71,5 +71,10 @@ namespace Calculadora
         {
             Tx_pantalla.Text += Bt_nueve.Text;
         }
+
+        private void Bt_decimal_Click(object sender, EventArgs e)
+        {
+            Tx_pantalla.Text += Bt_decimal.Text;
+        }
     }
 }

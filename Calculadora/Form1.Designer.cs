@@ -47,12 +47,16 @@
             this.Bt_limpiar = new System.Windows.Forms.Button();
             this.Bt_div = new System.Windows.Forms.Button();
             this.Tx_pantalla = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Bt_porcentaje = new System.Windows.Forms.Button();
+            this.Bt_factorial = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Bt_suma
             // 
             this.Bt_suma.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_suma.Location = new System.Drawing.Point(39, 98);
+            this.Bt_suma.Location = new System.Drawing.Point(77, 147);
             this.Bt_suma.Name = "Bt_suma";
             this.Bt_suma.Size = new System.Drawing.Size(45, 45);
             this.Bt_suma.TabIndex = 0;
@@ -62,7 +66,7 @@
             // Bt_siete
             // 
             this.Bt_siete.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_siete.Location = new System.Drawing.Point(39, 149);
+            this.Bt_siete.Location = new System.Drawing.Point(77, 198);
             this.Bt_siete.Name = "Bt_siete";
             this.Bt_siete.Size = new System.Drawing.Size(45, 45);
             this.Bt_siete.TabIndex = 1;
@@ -73,7 +77,7 @@
             // Bt_cuatro
             // 
             this.Bt_cuatro.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_cuatro.Location = new System.Drawing.Point(39, 200);
+            this.Bt_cuatro.Location = new System.Drawing.Point(77, 249);
             this.Bt_cuatro.Name = "Bt_cuatro";
             this.Bt_cuatro.Size = new System.Drawing.Size(45, 45);
             this.Bt_cuatro.TabIndex = 3;
@@ -84,7 +88,7 @@
             // Bt_uno
             // 
             this.Bt_uno.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_uno.Location = new System.Drawing.Point(39, 251);
+            this.Bt_uno.Location = new System.Drawing.Point(77, 300);
             this.Bt_uno.Name = "Bt_uno";
             this.Bt_uno.Size = new System.Drawing.Size(45, 45);
             this.Bt_uno.TabIndex = 2;
@@ -95,7 +99,7 @@
             // Bt_cero
             // 
             this.Bt_cero.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_cero.Location = new System.Drawing.Point(39, 302);
+            this.Bt_cero.Location = new System.Drawing.Point(77, 351);
             this.Bt_cero.Name = "Bt_cero";
             this.Bt_cero.Size = new System.Drawing.Size(96, 45);
             this.Bt_cero.TabIndex = 4;
@@ -106,7 +110,7 @@
             // Bt_cinco
             // 
             this.Bt_cinco.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_cinco.Location = new System.Drawing.Point(90, 200);
+            this.Bt_cinco.Location = new System.Drawing.Point(128, 249);
             this.Bt_cinco.Name = "Bt_cinco";
             this.Bt_cinco.Size = new System.Drawing.Size(45, 45);
             this.Bt_cinco.TabIndex = 8;
@@ -117,7 +121,7 @@
             // Bt_dos
             // 
             this.Bt_dos.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_dos.Location = new System.Drawing.Point(90, 251);
+            this.Bt_dos.Location = new System.Drawing.Point(128, 300);
             this.Bt_dos.Name = "Bt_dos";
             this.Bt_dos.Size = new System.Drawing.Size(45, 45);
             this.Bt_dos.TabIndex = 7;
@@ -128,7 +132,7 @@
             // Bt_ocho
             // 
             this.Bt_ocho.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_ocho.Location = new System.Drawing.Point(90, 149);
+            this.Bt_ocho.Location = new System.Drawing.Point(128, 198);
             this.Bt_ocho.Name = "Bt_ocho";
             this.Bt_ocho.Size = new System.Drawing.Size(45, 45);
             this.Bt_ocho.TabIndex = 6;
@@ -139,7 +143,7 @@
             // Bt_resta
             // 
             this.Bt_resta.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_resta.Location = new System.Drawing.Point(90, 98);
+            this.Bt_resta.Location = new System.Drawing.Point(128, 147);
             this.Bt_resta.Name = "Bt_resta";
             this.Bt_resta.Size = new System.Drawing.Size(45, 45);
             this.Bt_resta.TabIndex = 5;
@@ -149,17 +153,18 @@
             // Bt_decimal
             // 
             this.Bt_decimal.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_decimal.Location = new System.Drawing.Point(141, 302);
+            this.Bt_decimal.Location = new System.Drawing.Point(179, 351);
             this.Bt_decimal.Name = "Bt_decimal";
             this.Bt_decimal.Size = new System.Drawing.Size(45, 45);
             this.Bt_decimal.TabIndex = 14;
             this.Bt_decimal.Text = ".";
             this.Bt_decimal.UseVisualStyleBackColor = true;
+            this.Bt_decimal.Click += new System.EventHandler(this.Bt_decimal_Click);
             // 
             // Bt_seis
             // 
             this.Bt_seis.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_seis.Location = new System.Drawing.Point(141, 200);
+            this.Bt_seis.Location = new System.Drawing.Point(179, 249);
             this.Bt_seis.Name = "Bt_seis";
             this.Bt_seis.Size = new System.Drawing.Size(45, 45);
             this.Bt_seis.TabIndex = 13;
@@ -170,7 +175,7 @@
             // Bt_tres
             // 
             this.Bt_tres.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_tres.Location = new System.Drawing.Point(141, 251);
+            this.Bt_tres.Location = new System.Drawing.Point(179, 300);
             this.Bt_tres.Name = "Bt_tres";
             this.Bt_tres.Size = new System.Drawing.Size(45, 45);
             this.Bt_tres.TabIndex = 12;
@@ -181,7 +186,7 @@
             // Bt_nueve
             // 
             this.Bt_nueve.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_nueve.Location = new System.Drawing.Point(141, 149);
+            this.Bt_nueve.Location = new System.Drawing.Point(179, 198);
             this.Bt_nueve.Name = "Bt_nueve";
             this.Bt_nueve.Size = new System.Drawing.Size(45, 45);
             this.Bt_nueve.TabIndex = 11;
@@ -192,7 +197,7 @@
             // Bt_multiplica
             // 
             this.Bt_multiplica.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_multiplica.Location = new System.Drawing.Point(141, 98);
+            this.Bt_multiplica.Location = new System.Drawing.Point(179, 147);
             this.Bt_multiplica.Name = "Bt_multiplica";
             this.Bt_multiplica.Size = new System.Drawing.Size(45, 45);
             this.Bt_multiplica.TabIndex = 10;
@@ -202,7 +207,7 @@
             // Bt_atras
             // 
             this.Bt_atras.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_atras.Location = new System.Drawing.Point(192, 200);
+            this.Bt_atras.Location = new System.Drawing.Point(230, 249);
             this.Bt_atras.Name = "Bt_atras";
             this.Bt_atras.Size = new System.Drawing.Size(45, 45);
             this.Bt_atras.TabIndex = 18;
@@ -212,7 +217,7 @@
             // Bt_igual
             // 
             this.Bt_igual.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_igual.Location = new System.Drawing.Point(192, 251);
+            this.Bt_igual.Location = new System.Drawing.Point(230, 300);
             this.Bt_igual.Name = "Bt_igual";
             this.Bt_igual.Size = new System.Drawing.Size(45, 96);
             this.Bt_igual.TabIndex = 17;
@@ -222,7 +227,7 @@
             // Bt_limpiar
             // 
             this.Bt_limpiar.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_limpiar.Location = new System.Drawing.Point(192, 149);
+            this.Bt_limpiar.Location = new System.Drawing.Point(230, 198);
             this.Bt_limpiar.Name = "Bt_limpiar";
             this.Bt_limpiar.Size = new System.Drawing.Size(45, 45);
             this.Bt_limpiar.TabIndex = 16;
@@ -233,7 +238,7 @@
             // Bt_div
             // 
             this.Bt_div.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_div.Location = new System.Drawing.Point(192, 98);
+            this.Bt_div.Location = new System.Drawing.Point(230, 147);
             this.Bt_div.Name = "Bt_div";
             this.Bt_div.Size = new System.Drawing.Size(45, 45);
             this.Bt_div.TabIndex = 15;
@@ -243,16 +248,60 @@
             // Tx_pantalla
             // 
             this.Tx_pantalla.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tx_pantalla.Location = new System.Drawing.Point(39, 35);
+            this.Tx_pantalla.Location = new System.Drawing.Point(33, 35);
             this.Tx_pantalla.Name = "Tx_pantalla";
-            this.Tx_pantalla.Size = new System.Drawing.Size(198, 44);
+            this.Tx_pantalla.Size = new System.Drawing.Size(302, 44);
             this.Tx_pantalla.TabIndex = 19;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(230, 98);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(45, 45);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "/";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(179, 98);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(45, 45);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "*";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // Bt_porcentaje
+            // 
+            this.Bt_porcentaje.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_porcentaje.Location = new System.Drawing.Point(128, 98);
+            this.Bt_porcentaje.Name = "Bt_porcentaje";
+            this.Bt_porcentaje.Size = new System.Drawing.Size(45, 45);
+            this.Bt_porcentaje.TabIndex = 21;
+            this.Bt_porcentaje.Text = "%";
+            this.Bt_porcentaje.UseVisualStyleBackColor = true;
+            // 
+            // Bt_factorial
+            // 
+            this.Bt_factorial.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_factorial.Location = new System.Drawing.Point(77, 98);
+            this.Bt_factorial.Name = "Bt_factorial";
+            this.Bt_factorial.Size = new System.Drawing.Size(45, 45);
+            this.Bt_factorial.TabIndex = 20;
+            this.Bt_factorial.Text = "n!";
+            this.Bt_factorial.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 365);
+            this.ClientSize = new System.Drawing.Size(365, 425);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Bt_porcentaje);
+            this.Controls.Add(this.Bt_factorial);
             this.Controls.Add(this.Tx_pantalla);
             this.Controls.Add(this.Bt_atras);
             this.Controls.Add(this.Bt_igual);
@@ -300,6 +349,10 @@
         private System.Windows.Forms.Button Bt_limpiar;
         private System.Windows.Forms.Button Bt_div;
         private System.Windows.Forms.TextBox Tx_pantalla;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Bt_porcentaje;
+        private System.Windows.Forms.Button Bt_factorial;
     }
 }
 
