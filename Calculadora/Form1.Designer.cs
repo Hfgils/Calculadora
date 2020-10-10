@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class Form1
+    partial class Frm_Calculadora
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -44,11 +44,9 @@
             this.Bt_multiplica = new System.Windows.Forms.Button();
             this.Bt_atras = new System.Windows.Forms.Button();
             this.Bt_igual = new System.Windows.Forms.Button();
-            this.Bt_limpiar = new System.Windows.Forms.Button();
             this.Bt_div = new System.Windows.Forms.Button();
             this.Tx_pantalla = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Bt_Limpiar = new System.Windows.Forms.Button();
             this.Bt_porcentaje = new System.Windows.Forms.Button();
             this.Bt_factorial = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -62,6 +60,7 @@
             this.Bt_suma.TabIndex = 0;
             this.Bt_suma.Text = "+";
             this.Bt_suma.UseVisualStyleBackColor = true;
+            this.Bt_suma.Click += new System.EventHandler(this.Bt_suma_Click);
             // 
             // Bt_siete
             // 
@@ -149,6 +148,7 @@
             this.Bt_resta.TabIndex = 5;
             this.Bt_resta.Text = "-";
             this.Bt_resta.UseVisualStyleBackColor = true;
+            this.Bt_resta.Click += new System.EventHandler(this.Bt_resta_Click);
             // 
             // Bt_decimal
             // 
@@ -203,6 +203,7 @@
             this.Bt_multiplica.TabIndex = 10;
             this.Bt_multiplica.Text = "*";
             this.Bt_multiplica.UseVisualStyleBackColor = true;
+            this.Bt_multiplica.Click += new System.EventHandler(this.Bt_multiplica_Click);
             // 
             // Bt_atras
             // 
@@ -223,17 +224,7 @@
             this.Bt_igual.TabIndex = 17;
             this.Bt_igual.Text = "=";
             this.Bt_igual.UseVisualStyleBackColor = true;
-            // 
-            // Bt_limpiar
-            // 
-            this.Bt_limpiar.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_limpiar.Location = new System.Drawing.Point(230, 198);
-            this.Bt_limpiar.Name = "Bt_limpiar";
-            this.Bt_limpiar.Size = new System.Drawing.Size(45, 45);
-            this.Bt_limpiar.TabIndex = 16;
-            this.Bt_limpiar.Text = "CE";
-            this.Bt_limpiar.UseVisualStyleBackColor = true;
-            this.Bt_limpiar.Click += new System.EventHandler(this.button19_Click);
+            this.Bt_igual.Click += new System.EventHandler(this.Bt_igual_Click);
             // 
             // Bt_div
             // 
@@ -244,6 +235,7 @@
             this.Bt_div.TabIndex = 15;
             this.Bt_div.Text = "/";
             this.Bt_div.UseVisualStyleBackColor = true;
+            this.Bt_div.Click += new System.EventHandler(this.Bt_div_Click);
             // 
             // Tx_pantalla
             // 
@@ -253,59 +245,50 @@
             this.Tx_pantalla.Size = new System.Drawing.Size(302, 44);
             this.Tx_pantalla.TabIndex = 19;
             // 
-            // button1
+            // Bt_Limpiar
             // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(230, 98);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 45);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "/";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(179, 98);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 45);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "*";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Bt_Limpiar.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_Limpiar.Location = new System.Drawing.Point(230, 198);
+            this.Bt_Limpiar.Name = "Bt_Limpiar";
+            this.Bt_Limpiar.Size = new System.Drawing.Size(45, 45);
+            this.Bt_Limpiar.TabIndex = 23;
+            this.Bt_Limpiar.Text = "CE";
+            this.Bt_Limpiar.UseVisualStyleBackColor = true;
+            this.Bt_Limpiar.Click += new System.EventHandler(this.Bt_Limpiar_Click);
             // 
             // Bt_porcentaje
             // 
             this.Bt_porcentaje.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_porcentaje.Location = new System.Drawing.Point(128, 98);
+            this.Bt_porcentaje.Location = new System.Drawing.Point(179, 96);
             this.Bt_porcentaje.Name = "Bt_porcentaje";
-            this.Bt_porcentaje.Size = new System.Drawing.Size(45, 45);
+            this.Bt_porcentaje.Size = new System.Drawing.Size(96, 45);
             this.Bt_porcentaje.TabIndex = 21;
             this.Bt_porcentaje.Text = "%";
             this.Bt_porcentaje.UseVisualStyleBackColor = true;
+            this.Bt_porcentaje.Click += new System.EventHandler(this.Bt_porcentaje_Click);
             // 
             // Bt_factorial
             // 
             this.Bt_factorial.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_factorial.Location = new System.Drawing.Point(77, 98);
             this.Bt_factorial.Name = "Bt_factorial";
-            this.Bt_factorial.Size = new System.Drawing.Size(45, 45);
+            this.Bt_factorial.Size = new System.Drawing.Size(96, 45);
             this.Bt_factorial.TabIndex = 20;
             this.Bt_factorial.Text = "n!";
             this.Bt_factorial.UseVisualStyleBackColor = true;
+            this.Bt_factorial.Click += new System.EventHandler(this.Bt_factorial_Click);
             // 
-            // Form1
+            // Frm_Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(365, 425);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Bt_Limpiar);
             this.Controls.Add(this.Bt_porcentaje);
             this.Controls.Add(this.Bt_factorial);
             this.Controls.Add(this.Tx_pantalla);
             this.Controls.Add(this.Bt_atras);
             this.Controls.Add(this.Bt_igual);
-            this.Controls.Add(this.Bt_limpiar);
             this.Controls.Add(this.Bt_div);
             this.Controls.Add(this.Bt_decimal);
             this.Controls.Add(this.Bt_seis);
@@ -321,8 +304,8 @@
             this.Controls.Add(this.Bt_uno);
             this.Controls.Add(this.Bt_siete);
             this.Controls.Add(this.Bt_suma);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Frm_Calculadora";
+            this.Text = "Calculadora";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -346,11 +329,9 @@
         private System.Windows.Forms.Button Bt_multiplica;
         private System.Windows.Forms.Button Bt_atras;
         private System.Windows.Forms.Button Bt_igual;
-        private System.Windows.Forms.Button Bt_limpiar;
         private System.Windows.Forms.Button Bt_div;
         private System.Windows.Forms.TextBox Tx_pantalla;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Bt_Limpiar;
         private System.Windows.Forms.Button Bt_porcentaje;
         private System.Windows.Forms.Button Bt_factorial;
     }
